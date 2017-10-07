@@ -16,9 +16,9 @@
 
             $("#inputy").on("click", function(e) {
                 e.stopPropagation();
-                var radioCheckbox = $("input:radio, input:checkbox");
-                var radioCheckboxNotChecked = radioCheckbox.not(":checked");
-                console.log(radioCheckboxNotChecked)
+                var radioCheckbox = $("input:radio, input:checkbox").not(":checked");
+                //var radioCheckboxNotChecked = radioCheckbox.not(":checked");
+                console.log(radioCheckbox)
             })
         });
     
