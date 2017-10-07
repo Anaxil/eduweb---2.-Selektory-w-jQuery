@@ -26,6 +26,12 @@
             var pWithoutChildrens = $(".text p:not(:has(*))");
 
             console.log(pWithoutChildrens);
+
+            //wszystkie elementy z klasą “pagination-item”, które nie są elementem <span>
+
+            var paginationItem = $(".pagination-item:not(span)");
+
+            console.log(paginationItem);
         });
     
     })(jQuery);
