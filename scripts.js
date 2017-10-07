@@ -18,14 +18,14 @@
                 e.stopPropagation();
                 var radioCheckbox = $("input:radio, input:checkbox").not(":checked");
                 //var radioCheckboxNotChecked = radioCheckbox.not(":checked");
-                console.log(radioCheckbox)
+                console.log("nie zaznaczone radio/checkbox: ", radioCheckbox)
             })
 
             //wyłącznie pierwszy element <p>, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie <div> z identyfikatorem “text”
 
-            var pWithoutChildrens = $(".text p:not(:has(*))");
+            var pWithoutChildrens = $("div.text p:not(:has(*)):first");
 
-            console.log(pWithoutChildrens);
+            console.log("pierwszy parageraf bez dzieci w text: ", pWithoutChildrens);
 
             //wszystkie elementy z klasą “pagination-item”, które nie są elementem <span>
 
