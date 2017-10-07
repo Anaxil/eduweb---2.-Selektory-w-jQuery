@@ -20,6 +20,12 @@
                 //var radioCheckboxNotChecked = radioCheckbox.not(":checked");
                 console.log(radioCheckbox)
             })
+
+            //wyłącznie pierwszy element <p>, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie <div> z identyfikatorem “text”
+
+            var pWithoutChildrens = $(".text p:not(:has(*))");
+
+            console.log(pWithoutChildrens);
         });
     
     })(jQuery);

@@ -1,3 +1,7 @@
 .grid {
     border: 1px solid #24CFD4
 }
+
+p {
+    border: 1px dotted #04D331
+}
