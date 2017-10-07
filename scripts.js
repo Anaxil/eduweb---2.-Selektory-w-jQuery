@@ -12,6 +12,14 @@
     
             console.log("a zaczynające się http",aHttp);
 
+            //wszystkie elementy <input>, których typ to “radio” lub “checkbox” oraz dodatkowo nie są aktualnie zaznaczone (checked).
+
+            $("#inputy").on("click", function(e) {
+                e.stopPropagation();
+                var radioCheckbox = $("input:radio, input:checkbox");
+                var radioCheckboxNotChecked = radioCheckbox.not(":checked");
+                console.log(radioCheckboxNotChecked)
+            })
         });
     
     })(jQuery);
